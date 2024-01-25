@@ -19,12 +19,12 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = parse_requirements('requirements.txt')
-test_requirements = parse_requirements('requirements_dev.txt')
+# requirements = parse_requirements('requirements.txt')
+# test_requirements = parse_requirements('requirements_dev.txt')
 
 setup(
     name='swagger_parser',
-    version='1.0.2',
+    version='1.0.2.post1',
     description="Swagger parser giving useful informations about your swagger files",
     long_description=readme + '\n\n' + history,
     author="Cyprien Guillemot",
@@ -36,8 +36,19 @@ setup(
     package_dir={'swagger_parser':
                  'swagger_parser'},
     include_package_data=True,
-    setup_requires=['pytest-runner'],
-    install_requires=requirements,
+    install_requires=[
+        'swagger-spec-validator>=2.0.2',
+        'jsonschema>=2.5.1',
+        'requests',
+        'PyYAML>=5.2',
+        'jinja2>=2.8',
+    ],
+    extras_require={
+        'dev': [
+            'pytest>=2.7.0',
+            'flake8>=2.4.1',
+        ],
+    },
     license="MIT",
     zip_safe=False,
     keywords='swagger, parser, API, REST, swagger-parser',
@@ -48,6 +59,4 @@ setup(
         'Natural Language :: English',
         'Programming Language :: Python :: 3'
     ],
-    test_suite='tests',
-    tests_require=test_requirements
 )
