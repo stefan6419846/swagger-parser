@@ -1,0 +1,33 @@
+name: CI
+
+on:
+- push
+- pull_request
+- workflow_dispatch
+
+jobs:
+  main:
+    strategy:
+      matrix:
+        python: [3.8, 3.9, '3.10', '3.11', '3.12']
+      fail-fast: false
+    runs-on: ubuntu-latest
+    name: Python ${{ matrix.python }}
+    steps:
+    - uses: actions/checkout@v4
+    - name: set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python }}
+    - name: prepare pip
+      run:
+        python -m pip install --upgrade pip setuptools wheel
+    - name: install package
+      run:
+        python -m pip install .[dev]
+    - name: run tests
+      run:
+        pytest --verbose tests
+    - name: run flake8
+      run:
+        flake8 swagger_parser tests setup.py
