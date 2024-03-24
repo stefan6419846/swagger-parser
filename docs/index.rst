@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to Swagger Parser's documentation!
-======================================
+==========================================
 
 Contents:
 
