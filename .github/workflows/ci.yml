@@ -31,3 +31,6 @@ jobs:
     - name: run flake8
       run:
         flake8 swagger_parser tests setup.py
+    - name: build docs
+      run:
+        sphinx-build -n -W --keep-going -T -b html docs build/sphinx/html
