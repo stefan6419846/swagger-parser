@@ -36,6 +36,7 @@ setup(
             'pytest>=2.7.0',
             'flake8>=2.4.1',
             'Sphinx>=1.4.6',
+            'furo',
         ],
     },
     license="MIT",
