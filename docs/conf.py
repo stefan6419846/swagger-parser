@@ -55,8 +55,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Swagger Parser'
-copyright = u'2016, Cyprien Guillemot'
+project = 'Swagger Parser'
+copyright = '2016, Cyprien Guillemot, stefan6419846 (fork)'
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
@@ -111,7 +111,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'furo'
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.  For a list of options available for each theme, see the
@@ -209,8 +209,8 @@ latex_elements = {
 # [howto/manual]).
 latex_documents = [
     ('index', 'swagger_parser.tex',
-     u'Swagger Parser Documentation',
-     u'Cyprien Guillemot', 'manual'),
+     'Swagger Parser Documentation',
+     'Cyprien Guillemot', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at
@@ -240,8 +240,8 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'swagger_parser',
-     u'Swagger Parser Documentation',
-     [u'Cyprien Guillemot'], 1)
+     'Swagger Parser Documentation',
+     ['Cyprien Guillemot'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -255,8 +255,8 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     ('index', 'swagger_parser',
-     u'Swagger Parser Documentation',
-     u'Cyprien Guillemot',
+     'Swagger Parser Documentation',
+     'Cyprien Guillemot',
      'swagger_parser',
      'One line description of project.',
      'Miscellaneous'),
