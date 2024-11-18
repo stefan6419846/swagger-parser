@@ -48,7 +48,7 @@ Example Usage
 Documentation
 -------------
 
-More documentation is available at https://swagger-parser.readthedocs.org/en/latest/.
+More documentation is available at https://swagger-parser-fork.readthedocs.org/en/latest/.
 
 Setup
 -----
