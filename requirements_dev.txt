@@ -1,6 +1,6 @@
 wheel==0.46.1
 flake8==7.3.0
-coverage==7.10.5
+coverage==7.10.6
 Sphinx==8.2.3
 furo==2025.7.19
 pytest==8.4.1
