@@ -2,5 +2,5 @@ wheel==0.46.1
 flake8==7.3.0
 coverage==7.10.7
 Sphinx==8.2.3
-furo==2025.7.19
+furo==2025.9.25
 pytest==8.4.2
