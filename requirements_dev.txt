@@ -3,4 +3,4 @@ flake8==7.3.0
 coverage==7.13.0
 Sphinx==9.0.4
 furo==2025.9.25
-pytest==9.0.1
+pytest==9.0.2
