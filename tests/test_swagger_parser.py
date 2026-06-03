@@ -17,7 +17,7 @@ def test_validate_petstore_swagger_json():
 
 # whatever is defined in the petstore, we should be able to parse the yaml
 def test_validate_petstore_swagger_yaml():
-    complete_yaml = requests.get("http://petstore.swagger.io/v2/swagger.yaml").text
+    complete_yaml = requests.get("https://github.com/swagger-api/swagger-codegen/raw/c7dd2fc27e11d2e7a5a057974fb5c4b5545c53ab/samples/server/petstore/sinatra/swagger.yaml").text
     SwaggerParser(swagger_yaml=complete_yaml, use_example=True)
     SwaggerParser(swagger_yaml=complete_yaml, use_example=False)
 
