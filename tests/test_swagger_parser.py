@@ -10,7 +10,7 @@ from swagger_parser import SwaggerParser
 
 # whatever is defined in the petstore, we should be able to parse the json
 def test_validate_petstore_swagger_json():
-    complete_json = requests.get("http://petstore.swagger.io/v2/swagger.json").json()
+    complete_json = requests.get("https://github.com/swagger-api/swagger-codegen/raw/c7dd2fc27e11d2e7a5a057974fb5c4b5545c53ab/samples/server/petstore/aspnetcore/src/IO.Swagger/wwwroot/swagger-original.json").json()
     SwaggerParser(swagger_dict=complete_json, use_example=True)
     SwaggerParser(swagger_dict=complete_json, use_example=False)
 
