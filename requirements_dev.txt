@@ -1,4 +1,4 @@
-wheel==0.47.0
+wheel==0.48.0
 flake8==7.3.0
 coverage==7.15.4
 Sphinx==9.1.0
